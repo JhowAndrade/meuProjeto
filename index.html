@@ -45,8 +45,6 @@
                 <div>
                     <input type="submit" value="Carregar mais">
                 </div>
-
-                
         </section>
         
         <section id="games">
@@ -72,36 +70,51 @@
                     <p><span>De</span> Sony Interactive Entertainment</p>
                     <h2>9.7</h2>
                 </div>
-                
             </div>
         </section>
         
         <section id="inscription">
-            <h2 >Faça sua inscrição</h2>
-
-            <p>Nome completo</p>
-            <p>Email</p>
-            <p>Qual sua plataforma preferida?</p>
-            <p>PC</p>
-            <p>Xbox</p>
-            <p>Playstation</p>
-    
-            <p>Desejo receber novidades.</p>
-    
-            <input type="submit" value="Enviar">
-            <input type="submit" value="Limpar">
+            <form>
+                <div>
+                    <h2>Faça sua inscrição</h2>
+                    <div>
+                        <input type="text" placeholder="Nome completo" required>
+                        <input type="email" placeholder="Email" required>
+                        
+                        <p>Qual sua plataforma preferida?</p>
+                        <ul>
+                            <li><input id="pc" type="radio" name="plataforma" value="PC">PC</li>
+                            <li><input id="xbox" type="radio" name="plataforma" value="Xbox">Xbox</li>
+                            <li><input id="playstation" type="radio" name="plataforma" value="Playstation">Playstation</li>
+                        </ul>
+                        <input id="selecao" type="checkbox" name="selecao">
+                        <label for="option">Desejo receber novidades.</label>
+                    </div> 
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>  
         </section>
     </main>
 
     <footer>
-        <p>@dsplaygames</p>
-        <p>/dsplaygames</p>
-
-        <p>DS Play Games Ltda. Todos direitos reservados</p>
-
-        <p>Política de privacidade</p>
-
-        <p>Termos de uso</p>
+        <div>
+           <a href="#">@dsplaygames</a>
+           <div>
+            <a href="#">/dsplaygames</a>
+           </div>
+          <div>
+            <p>DS Play Games Ltda. Todos direitos reservados</p>
+          </div>
+          <div>
+            <a href="#">Política de privacidade</a>
+          </div>
+          <div>
+            <a href="#">Termos de uso</a>
+          </div> 
+       </div>
     </footer>
 </body>
 </html>
